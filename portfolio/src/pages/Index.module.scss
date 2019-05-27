@@ -2,13 +2,24 @@
   max-width: 60rem;
   margin: 3rem auto 0;
   font-family: sans-serif;
+  position: relative;
 
   p {
     color: #aaa;
   }
+
+  svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+  }
 }
 
 h1 {
+  position: relative;
+  z-index: 10;
   margin-top: 160px;
   margin-bottom: 160px;
   color: #414e4d;
