@@ -1,4 +1,4 @@
-<svg width="1352" height="646" viewBox="0 0 1352 646" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className="Shapes" width="1352" height="646" viewBox="0 0 1352 646" fill="none" xmlns="http://www.w3.org/2000/svg">
 <ellipse cx="119.321" cy="154.003" rx="3.53982" ry="3.53982" transform="rotate(43.0626 119.321 154.003)" fill="#7DCCCB"/>
 <ellipse cx="141.951" cy="175.152" rx="3.53982" ry="3.53982" transform="rotate(43.0626 141.951 175.152)" fill="#7DCCCB"/>
 <ellipse cx="164.579" cy="196.3" rx="3.53982" ry="3.53982" transform="rotate(43.0626 164.579 196.3)" fill="#7DCCCB"/>
@@ -58,5 +58,4 @@
 <rect x="453.859" y="90" width="60" height="60" rx="8" transform="rotate(18.3199 453.859 90)" fill="#EDEDED"/>
 <rect x="793" y="408" width="60" height="60" rx="8" transform="rotate(30 793 408)" fill="#7DCCCB"/>
 <rect x="0.882812" y="489.146" width="60" height="60" rx="8" transform="rotate(-10.8201 0.882812 489.146)" fill="#F18F90"/>
-<rect x="1148" y="327.264" width="60" height="60" rx="8" transform="rotate(-10.8201 1148 327.264)" fill="#7DCCCB"/>
 </svg>

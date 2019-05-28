@@ -1,0 +1,49 @@
+.Header {
+  max-width: 1600px;
+  padding: 20px 40px;
+  color: #414e4d;
+  line-height: 1.44;
+  text-align: center;
+  font-family: "Apercu", sans-serif;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.NavLeft {
+  justify-self: flex-start;
+  margin-right: auto;
+}
+
+.NavRight {
+  display: flex;
+  flex: 0;
+  flex-flow: row no-wrap;
+
+  .Link {
+    flex: auto;
+  }
+}
+
+.Link {
+  display: block;
+  color: #414e4d;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 20px;
+  font-size: 24px;
+  transition: all 100ms ease-in;
+  letter-spacing: 1%;
+
+  &:hover {
+    color: #7DCCCB;
+  }
+
+  &:visted {
+    text-decoration: none;
+  }
+}

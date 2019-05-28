@@ -6,15 +6,21 @@ import SEO from "../components/seo"
 import Shapes from "../assets/shapes.svg";
 
 import * as styles from './Index.module.scss'
+import { useSpring, animated } from 'react-spring'
 
-const IndexPage = () => (
-  <Layout>
-    <div className={styles.Container}>
-      <SEO title="Home" />
-      <h1>Product designer and developer living in San Francisco, working at Discord</h1>
-      <Shapes />
-    </div>
-  </Layout>
-)
+export default class IndexPage extends React.Component {
 
-export default IndexPage
+  render() {
+
+    return(
+      <Layout>
+        <Shapes className={styles.Shapes}/>
+        <div className={styles.Container}>
+          <SEO title="Home" />
+          <h1 className={styles.Title}>Product designer and developer living in San Francisco, working at Discord</h1>
+        </div>
+        <section className={styles.Section}></section>
+      </Layout>
+    );
+  }
+}
