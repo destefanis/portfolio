@@ -1,2 +1,2 @@
 # portfolio
-New person portfolio built on Gatsby
+New personal portfolio built on Gatsby
