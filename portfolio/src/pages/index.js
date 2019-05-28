@@ -17,7 +17,7 @@ export default class IndexPage extends React.Component {
         <Shapes className={styles.Shapes}/>
         <div className={styles.Container}>
           <SEO title="Home" />
-          <h1 className={styles.Title}>Product designer and developer living in San Francisco, working at Discord</h1>
+          <h1 className={styles.Title}>Product designer and developer living in San Francisco, working at Discord.</h1>
         </div>
         <section className={styles.Section}></section>
       </Layout>

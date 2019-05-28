@@ -5,6 +5,8 @@
   line-height: 1.44;
   text-align: center;
   font-family: "Apercu", sans-serif;
+  position: relative;
+  z-index: 10;
 }
 
 .Nav {
@@ -35,7 +37,7 @@
   text-decoration: none;
   font-weight: 500;
   padding: 20px;
-  font-size: 24px;
+  font-size: 20px;
   transition: all 100ms ease-in;
   letter-spacing: 1%;
 

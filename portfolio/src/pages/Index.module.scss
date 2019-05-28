@@ -10,8 +10,8 @@
 }
 
 .Shapes {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   height: auto;
@@ -23,10 +23,11 @@
   z-index: 10;
   margin: 120px auto 260px;
   color: #414e4d;
-  line-height: 1.44;
+  line-height: 1.6;
   text-align: center;
   font-family: "Apercu", sans-serif;
-  font-size: 44px;
+  font-size: 42px;
+  max-width: 890px;
 }
 
 .Section {
