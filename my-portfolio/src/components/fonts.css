@@ -12,12 +12,12 @@
  */
 
 @font-face {
-    font-family: 'relative-medium';
-    src: url('relative-medium.eot');
-    src: url('relative-medium.eot?#iefix') format('embedded-opentype'),
-         url('relative-medium.woff2') format('woff2'),
-         url('relative-medium.woff') format('woff'),
-         url('relative-medium.ttf') format('truetype');
+    font-family: "Relative";
+    src: url('./fonts/relative-medium.eot');
+    src: url('./fonts/relative-medium.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/relative-medium.woff2') format('woff2'),
+         url('./fonts/relative-medium.woff') format('woff'),
+         url('./fonts/relative-medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
