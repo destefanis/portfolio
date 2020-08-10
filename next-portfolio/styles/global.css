@@ -10,12 +10,12 @@ body {
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
 }
 
 .container {
-  max-width: 1480px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -42,3 +42,25 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.shape {
+  position: absolute;
+}
+
+.shape--dots {
+  top: 300px;
+  right: 320px;
+}
+
+.shape--circle {
+  top: 192px;
+  right: 192px;
+}
+
+.shape--square {
+  top: 410px;
+  right: 80px;
+}
+
+
+
