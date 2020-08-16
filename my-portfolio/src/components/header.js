@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header className="nav-wrapper">
       <h1 className="logo-title">
-        Daniel Destefanis
+      {siteTitle}
       </h1>
     <nav className="nav">
       <a href="#contact" className="nav-link">
