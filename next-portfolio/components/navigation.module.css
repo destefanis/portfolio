@@ -2,7 +2,9 @@
   display: flex;
   flex-flow: row;
   width: 100%;
-  padding: 60px 60px 0;
+  padding: 60px 0 0;
+  grid-column-start: 1;
+  grid-column-end: 13;
 }
 
 .navList {
@@ -13,5 +15,5 @@
 }
 
 .navLink {
-  padding-left: 30px;
+  padding-left: 60px;
 }

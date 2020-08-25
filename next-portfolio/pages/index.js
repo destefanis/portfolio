@@ -6,7 +6,7 @@ import WorkGrid from '../components/WorkGrid'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="wrapper">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

@@ -5,10 +5,10 @@ import styles from './navigation.module.css'
 
 function Navigation() {
   return (
-    <div className="container">
+    <div className="grid">
       <motion.nav 
         className={styles.nav}
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 1, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', delay: 0 }}
       >
