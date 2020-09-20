@@ -7,8 +7,13 @@
 :root {
   --color-black: #222;
   --color-white: #fff;
-  --color-brand: #FCBEBC;
-  --color-brand-dark: #612321;
+  --color-pink: #FFBCBC;
+  --color-pink-dark: #612321;
+  --color-yellow: #ffdf64ff;
+  --color-green: #4ce0b3ff;
+  --color-blue: #1e91d6ff;
+  --color-purple: #B47AEA;
+  --color-teal: #297373;
 }
 
 html,
@@ -30,6 +35,10 @@ body {
   margin: 0 60px;
   max-width: 1800px;
   margin: auto;
+}
+
+.grid--full {
+  max-width: calc(100% - 120px);
 }
 
 .container {

@@ -14,27 +14,39 @@
 .card {
   position: relative;
   display: flex;
-  height: 800px;
-  background: var(--color-brand);  
+  height: 800px;  
   border-radius: 24px;
-  padding: 20px;
   flex-flow: column;
 }
 
 /* Featured cards take up an entire row */
 .featured {
   grid-column: span 2;
-  background: linear-gradient(107.63deg, #F9F9F9 0.47%, #FFE1E1 98.09%);
+  background: var(--color-pink);
 }
 
-.card:nth-child(2),
-.card:nth-child(4) {
-  background: linear-gradient(107.99deg, #F9F8F8 0%, #FCECEC 100%);
+.cardPink {
+  background: var(--color-pink);
 }
 
-.card:nth-child(3),
-.card:nth-child(5) {
-  background: linear-gradient(319.68deg, #FFE2E2 0%, #FDEDED 100%);
+.cardBlue {
+  background: var(--color-blue);
+}
+
+.cardGreen {
+  background: var(--color-green);
+}
+
+.cardPurple {
+  background: var(--color-purple);
+}
+
+.cardYellow {
+  background: var(--color-yellow);
+}
+
+.cardTeal {
+  background: var(--color-teal);
 }
 
 .imageWrapper {
@@ -52,25 +64,21 @@
   justify-content: space-evenly;
 }
 
-.carousel .image {
-  margin: 0 30px;
-}
-
 .image {
-  width: 269px;
+  width: 100%;
   height: auto;
 }
 
 .title {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 30px;
+  left: 30px;
   font-family: Inter;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 8px;
-  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+  border-radius: 32px;
   background: var(--color-white);
   color: var(--color-black);
 }

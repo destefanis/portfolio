@@ -5,7 +5,7 @@ import styles from './navigation.module.css'
 
 function Navigation() {
   return (
-    <div className="grid">
+    <div className="grid grid--full">
       <motion.nav 
         className={styles.nav}
         initial={{ opacity: 1, y: 0 }}
