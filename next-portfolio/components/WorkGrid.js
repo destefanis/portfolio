@@ -12,7 +12,11 @@ function WorkGrid() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', delay: 0.5 }}
       >
-        <div className={`${styles.card} ${styles.featured}`}>
+        <motion.div 
+          className={`${styles.card} ${styles.featured}`}
+          whileHover={{ scale: 1.01 }}
+          whileTap={{ scale: 0.98 }}
+        >
           <div class={styles.imageWrapper}>
             <div class={styles.carousel}>
               <img src="/server-video-3.png" alt="Discord server video ui" className={styles.image} />
@@ -21,7 +25,7 @@ function WorkGrid() {
             </div>
           </div>
           <h6 className={styles.title}>Server Video</h6>
-        </div>
+        </motion.div>
         <div className={styles.card}>
           <div class={styles.imageWrapper}>
             <img src="/discord-onboarding-1.png" alt="Discord Onboarding UI" className={styles.image} />
@@ -29,6 +33,9 @@ function WorkGrid() {
           <h6 className={styles.title}>Discord Onboarding</h6>
         </div>
         <div className={styles.card}>
+          <div class={styles.imageWrapper}>
+            <img src="/design-tooling.png" alt="Image of the design linting plugin" className={styles.image} />
+          </div>
           <h6 className={styles.title}>Design Tooling</h6>
         </div>
         {/* <div className={styles.card}>

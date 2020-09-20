@@ -28,6 +28,8 @@ body {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   margin: 0 60px;
+  max-width: 1800px;
+  margin: auto;
 }
 
 .container {

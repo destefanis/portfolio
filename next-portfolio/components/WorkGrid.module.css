@@ -1,7 +1,7 @@
 
 /* This is a nested grid with two columns */
 .workGrid {
-  padding: 180px 0;
+  padding: 240px 0;
   grid-column-start: 2;
   grid-column-end: 12;
   display: grid;
