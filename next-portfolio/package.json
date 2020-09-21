@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "framer-motion": "^2.3.0",
     "next": "9.3.5",
     "react": "16.13.1",
