@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 function Hero() {
   return (
-    <div class="grid">
+    <div className="grid">
       <div className={styles.hero}>
         <motion.h1 
           className={styles.title}
@@ -28,7 +28,7 @@ function Hero() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: 'spring', delay: 0.65, damping: 15 }}>
-              Design Lead at Discord
+              Design Manager at Discord
             </motion.h3>
           </div>
           <div className={styles.detail}>

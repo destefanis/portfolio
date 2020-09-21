@@ -5,15 +5,16 @@
 
 /* CSS Variables */
 :root {
-  --color-black: #222;
+  --color-black: #252323;
   --color-white: #fff;
-  --color-pink: #FFBCBC;
-  --color-pink-dark: #612321;
-  --color-yellow: #ffdf64ff;
-  --color-green: #4ce0b3ff;
-  --color-blue: #1e91d6ff;
-  --color-purple: #B47AEA;
-  --color-teal: #297373;
+  --color-grey: #f9f9f9;
+  --color-pink: hsla(0, 100%, 87%, 1);
+  --color-pink-dark: hsla(2, 49%, 25%, 1);
+  --color-yellow: hsla(48, 100%, 70%, 1);
+  --color-green: hsla(162, 70%, 59%, 1);
+  --color-blue: hsla(203, 75%, 48%, 1);
+  --color-purple: hsla(271, 73%, 70%, 1);
+  --color-teal: hsla(180, 47%, 31%, 1);
 }
 
 html,

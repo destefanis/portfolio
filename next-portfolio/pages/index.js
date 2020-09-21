@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Navigation from '../components/navigation'
 import Hero from '../components/hero'
 import WorkGrid from '../components/WorkGrid'
+import AboutSection from '../components/AboutSection'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
         <Navigation />
         <Hero />
         <WorkGrid />
+        <AboutSection />
+        <Footer />
       </main>
     </div>
   )

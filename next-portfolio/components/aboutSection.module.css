@@ -1,0 +1,52 @@
+.aboutSection {
+  padding: 0;
+  color: var(--color-black);
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  flex-flow: row;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 160%;
+  max-width: 680px;
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 60px;
+}
+
+.text {
+  align-self: flex-start;
+  justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.videos {
+  align-self: flex-end;
+  margin-left: auto;
+  display: flex;
+  flex-flow: nowrap
+}
+
+.videoColumn {
+  display: flex;
+  flex-flow: column;
+  margin-left: 20px;
+}
+
+.videoColumnFirst {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.videoColumn :nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.video {
+  border-radius: 12px;
+}
