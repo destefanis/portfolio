@@ -9,14 +9,20 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-flow: column;
   height: 800px;
   border-radius: 24px;
 }
 
 .title {
-  margin: auto;
+  margin: 0 auto;
   font-size: 36px;
   line-height: 160%;
+  font-weight: 500;
+}
+
+.contact {
+  color: var(--color-blue);
 }
 
 .icon {

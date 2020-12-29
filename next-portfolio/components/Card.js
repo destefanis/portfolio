@@ -10,6 +10,7 @@ function Card(props) {
   const ref = useRef();
   const [hover, setHover] = useState(false);
   const [tapped, setTapped] = useState(false);
+  const [visibleState, setVisibleState] = useState("initial");
   let width = 888;
   let height = 962;
 
@@ -18,7 +19,7 @@ function Card(props) {
   const xy = useMotionValue(centerPoint);
 
   // How much should we rotate?
-  const tx = 0.002;
+  const tx = 0.003;
 
   // Get rotateY
   const transformX = interpolate([0, width], [width * tx, width * tx * -1]);
@@ -32,8 +33,8 @@ function Card(props) {
   const rotateX = useTransform(xy, ([, y]) => transformY(y));
 
   const config = {
-    stiffness: 150,
-    damping: 20
+    stiffness: 200,
+    damping: 25
   };
 
   // Get our spring values
@@ -62,34 +63,34 @@ function Card(props) {
   }, [hover, xy, centerPoint]);
 
   return (
-    <div className={`${styles.cardPerspectiveWrapper}`}>
-      <motion.div 
-        className={`${styles.contentWrapper}`}
-        style={{
-          scale: 1,
-          rotateX: springX,
-          rotateY: springY
-        }}
-        onTapCancel={(e) => {
-          setTapped(false);
-          onMouseOver(e);
-        }}
-        onTapStart={() => {
-          setTapped(true);
-        }}
-        onTap={(e) => {
-          setTapped(false);
-        }}
-        onHoverStart={hoverStart}
-        onHoverEnd={hoverEnd}
-        onMouseMove={onMouseOver}
-      >
-        <div className={`${styles.card} ${styles[props.color]}`}>
-          <img src={props.image} alt={props.imageAlt} className={styles.image} />
-          <h6 className={styles.title}>{props.title}</h6>
-        </div>
-      </motion.div>
-    </div>
+      <div className={`${styles.cardPerspectiveWrapper}`}>
+        <motion.div 
+          className={`${styles.contentWrapper}`}
+          style={{
+            scale: 1,
+            rotateX: springX,
+            rotateY: springY
+          }}
+          onTapCancel={(e) => {
+            setTapped(false);
+            onMouseOver(e);
+          }}
+          onTapStart={() => {
+            setTapped(true);
+          }}
+          onTap={(e) => {
+            setTapped(false);
+          }}
+          onHoverStart={hoverStart}
+          onHoverEnd={hoverEnd}
+          onMouseMove={onMouseOver}
+        >
+          <div className={`${styles.card} ${styles[props.color]}`}>
+            <img src={props.image} alt={props.imageAlt} className={styles.image} />
+            <h6 className={styles.title}>{props.title}</h6>
+          </div>
+        </motion.div>
+      </div>
   )
 }
 

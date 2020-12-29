@@ -16,7 +16,7 @@ export default function Home() {
 
       <main>
         <Navigation />
-        <Hero />
+        <Hero text="I’m a designer who’s passionate about solving problems and creating delightful user experiences." details={true}/>
         <WorkGrid />
         <AboutSection />
         <Footer />

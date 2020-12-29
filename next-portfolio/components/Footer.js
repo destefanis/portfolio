@@ -8,6 +8,10 @@ function Footer() {
       <div className={styles.footer}>
         <div className={styles.card}>
           <h2 className={styles.title}>
+            Question about my work?
+            {/* <img src="/message-circle.svg" alt="Message Icon" className={styles.icon} /> */}
+          </h2>
+          <h2 className={`${styles.title} ${styles.contact} `}>
             Let's chat. 
             {/* <img src="/message-circle.svg" alt="Message Icon" className={styles.icon} /> */}
           </h2>

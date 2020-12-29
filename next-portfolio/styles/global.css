@@ -21,11 +21,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-weight: 400;
   font-size: 18px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .grid {
@@ -33,7 +34,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  /* max-width: calc(100% - 120px); */
+  max-width: calc(100% - 120px);
   margin: auto;
 }
 
@@ -50,18 +51,6 @@ body {
 .container {
   max-width: 1800px;
   margin: 0 auto;
-}
-
-.width-1\/12 {
-  grid-column: span 1;
-}
-
-.width-2\/12 {
-  grid-column: span 2;
-}
-
-.width-12\/12 {
-  grid-column: span 12;
 }
 
 @media (max-width: 1480px) {

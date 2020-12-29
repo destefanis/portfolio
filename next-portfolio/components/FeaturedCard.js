@@ -18,7 +18,8 @@ function FeaturedCard(props) {
   const xy = useMotionValue(centerPoint);
 
   // How much should we rotate?
-  const tx = 0.0005;
+  const tx = 0.0015;
+  
 
   // Get rotateY
   const transformX = interpolate([0, width], [width * tx, width * tx * -1]);
@@ -32,8 +33,8 @@ function FeaturedCard(props) {
   const rotateX = useTransform(xy, ([, y]) => transformY(y));
 
   const config = {
-    stiffness: 150,
-    damping: 20
+    stiffness: 200,
+    damping: 25
   };
 
   // Get our spring values

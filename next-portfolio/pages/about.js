@@ -1,28 +1,22 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Hero from '../components/hero'
+import Navigation from '../components/navigation'
+import Footer from '../components/Footer'
 
 export default function About() {
   return (
-    <div className="container">
+    <div className="wrapper">
       <Head>
-        <title>About Daniel</title>
+        <title>About Daniel Destefanis</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-      <>
-        <h1>First Post</h1>
-        <h2>
-          <Link href="/">
-            <a>Back to home</a>
-          </Link>
-        </h2>
-      </>
+        <Navigation />
+        <Hero text="I’m a husband, dad to three pets, and a designer who’s trying not to take himself too seriously." details={false}/>
+        <Footer />
       </main>
-
-      <footer>
-        Let's Chat
-      </footer>
     </div>
   )
 }

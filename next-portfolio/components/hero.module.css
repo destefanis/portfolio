@@ -10,9 +10,9 @@
 }
 
 .title {
-  max-width: 70%;
+  max-width: 72%;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 160%;
   color: var(--color-black);
 }
@@ -24,6 +24,7 @@
 }
 
 .detail {
+  /* TODO Fix this magic number */
   padding-right: 106px;
   display: flex;
   flex-flow: row;
@@ -49,7 +50,7 @@
   margin: auto;
   padding-left: 20px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   color: var(--color-black);
 }
