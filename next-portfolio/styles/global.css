@@ -48,9 +48,34 @@ body {
   max-width: calc(100% - 120px);
 }
 
+.about {
+  padding-bottom: 280px;
+}
+
+.bio {
+  grid-column: 2 / 9;
+}
+
+.bio-body {
+  grid-column: 2 / 8;
+}
+
+.experience {
+  grid-column: 2 / 6;
+}
+
+.previous-work {
+  grid-column: 7 / 11;
+}
+
+/* .six-columns {
+  grid-column: 2 / 8;
+} */
+
 .container {
   max-width: 1800px;
   margin: 0 auto;
+  padding: 0 60px;
 }
 
 @media (max-width: 1480px) {
@@ -77,23 +102,45 @@ img {
   display: block;
 }
 
-.shape {
-  position: absolute;
+.list {
+  margin-top: 60px;
+  list-style: none;
 }
 
-.shape--dots {
-  top: 300px;
-  right: 320px;
+.list-item {
+  margin-bottom: 40px;
 }
 
-.shape--circle {
-  top: 192px;
-  right: 192px;
+.h2 {
+  margin-bottom: 20px;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
-.shape--square {
-  top: 410px;
-  right: 80px;
+.h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.timeline {
+  margin-bottom: 6px;
+}
+
+.paragraph {
+  font-size: 32px;
+  line-height: 1.6;
+}
+
+.paragraph--large {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 

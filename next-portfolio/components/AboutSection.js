@@ -67,17 +67,19 @@ function AboutSection() {
           <h2 className={styles.title}>
             Besides design, I love writing music, programming, games and taking my dog to his favorite parks.
           </h2>
-          <div className={styles.link}>
-            About Me ->
-          </div>
+          <Link href="/about">
+            <a href="/about" className={styles.link}>
+              About Me ->
+            </a>
+          </Link>
         </motion.div>
         <motion.div className={styles.videos} variants={textVariants} initial="initial" animate={visibleState}>
           <div className={`${styles.videoColumn} ${styles.videoColumnFirst}`}>
-            <video src="https://newportfolio.s3-us-west-2.amazonaws.com/about-me-video.mp4" className={styles.video} autoPlay muted loop/>
+            <video src="https://newportfolio.s3-us-west-2.amazonaws.com/daniel.mp4" className={styles.video} autoPlay muted loop/>
           </div>
           <motion.div className={styles.videoColumn} variants={textVariants} initial="initial" animate={visibleState}>
-            <video src="https://newportfolio.s3-us-west-2.amazonaws.com/about-me-magnus.mp4" className={styles.video} autoPlay muted loop />
-            <video src="https://newportfolio.s3-us-west-2.amazonaws.com/about-me-beach.mp4" className={styles.video} autoPlay muted loop />
+            <video src="https://newportfolio.s3-us-west-2.amazonaws.com/mag-final.mp4" className={styles.video} autoPlay muted loop />
+            <video src="https://newportfolio.s3-us-west-2.amazonaws.com/beach.mp4" className={styles.video} autoPlay muted loop />
           </motion.div>
         </motion.div>
       </div>

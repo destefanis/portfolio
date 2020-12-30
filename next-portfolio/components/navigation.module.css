@@ -18,4 +18,10 @@
 
 .navLink {
   padding-left: 60px;
+  transition: color 200ms ease;
+}
+
+.navLink:hover {
+  color: var(--color-blue);
+  text-decoration: none;
 }

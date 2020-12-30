@@ -15,9 +15,16 @@
 }
 
 .link {
+  display: block;
   font-size: 20px;
   margin-top: 60px;
   font-weight: 500;
+  transition: color 200ms ease;
+}
+
+.link:hover {
+  color: var(--color-blue);
+  text-decoration: none;
 }
 
 .text {

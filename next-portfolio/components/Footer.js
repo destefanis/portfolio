@@ -18,7 +18,7 @@ function Footer() {
         </div>
         <nav className={styles.footerLinks}>
           <div className={styles.openSource}>
-            This portfolio is open source and available on Figma and Github.
+            View this portfolio on Figma or Github.
           </div>
           <div className={styles.socialLinks}>
             <a href="#" target="_blank" className={styles.socialLink}>
