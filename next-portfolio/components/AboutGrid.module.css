@@ -1,6 +1,6 @@
 /* This is a nested grid with two columns */
 .aboutGrid {
-  padding: 240px 0 240px;
+  padding: 0 0 240px;
   grid-column-start: 1;
   grid-column-end: 13;
   display: grid;
@@ -8,10 +8,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-}
-
-.wrapper {
-  /*  */
 }
 
 .video {

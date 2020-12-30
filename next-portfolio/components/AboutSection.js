@@ -11,6 +11,7 @@ function AboutSection() {
   // https://github.com/wellyshen/react-cool-inview
   const { ref, inView, scrollDirection, entry, observe, unobserve } = useInView({
       threshold: 0.25, // Default is 0
+      unobserveOnEnter: true,
       onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
         setVisibleState("visible");
       },
@@ -26,7 +27,7 @@ function AboutSection() {
       transition: {
         type: "spring",
         duration: 0.6,
-        delayChildren: 0.3
+        delayChildren: 0.1
       }
     },
     visible: {
@@ -34,7 +35,7 @@ function AboutSection() {
       transition: {
         type: "spring",
         duration: 0.6,
-        delayChildren: 0.3
+        delayChildren: 0.1
       }
     }
   };

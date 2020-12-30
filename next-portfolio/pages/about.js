@@ -1,10 +1,12 @@
+import { motion } from 'framer-motion'
 import Head from 'next/head'
 import Link from 'next/link'
 import Hero from '../components/hero'
 import Navigation from '../components/navigation'
 import Footer from '../components/Footer'
 import styles from '../components/AboutGrid.module.css'
-import { motion } from 'framer-motion'
+import Card from '../components/Card'
+
 
 export default function About() {
   return (
@@ -40,7 +42,7 @@ export default function About() {
         </motion.section>
         <motion.section className="grid about">
           <div className="bio">
-            <h2 className="h2">I’m currently helping to lead, mentor, and grow the team Discord as a design manager.</h2>
+            <h2 className="h2">I’m currently helping to lead, mentor, and grow the team at Discord as a design manager.</h2>
           </div>
             <div className="bio-body">
               <p className="paragraph paragraph--large">
@@ -52,9 +54,13 @@ export default function About() {
               Everyday I’m motivated by the opportunity to solve real problems for people. 
               I’m always trying to improve my craft, continue learning, and help others grow as designers.
               </p>
+              <p className="paragraph paragraph--large">
+              When I'm not designing you'll find me writing music, playing games, or at my local coffee shop.
+              </p>
             </div>
         </motion.section>
-        <motion.section className="grid">
+
+        <motion.section className="grid about">
           <div className="experience">
             <h2 className="h2">Experience</h2>
             <ul className="list">
@@ -142,6 +148,28 @@ export default function About() {
               </li>
             </ul>
           </div>
+        </motion.section>
+
+        <motion.section className="container next-project">
+            <div className="grid">
+              <h2 className="h2 grid-title">Next Project</h2>
+            </div>
+            <div className="grid work-grid">
+              <Card 
+                image="https://newportfolio.s3-us-west-2.amazonaws.com/discord-onboarding-image.png"
+                imageAlt="Image of Destiny Medals Project"
+                color="blue"
+                title="Discord Onboarding"
+                size="normal"
+              />
+              <Card 
+                image="https://newportfolio.s3-us-west-2.amazonaws.com/design-tooling-image.png"
+                imageAlt="UI of Design Tooling Plugins in Figma"
+                color="green"
+                title="Design Tooling"
+                size="normal"
+              />
+            </div>
         </motion.section>
         <Footer />
       </main>

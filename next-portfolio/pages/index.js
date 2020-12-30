@@ -7,8 +7,10 @@ import AboutSection from '../components/AboutSection'
 import Footer from '../components/Footer'
 
 export default function Home() {
+  const ref = React.useRef(null);
+
   return (
-    <div className="wrapper">
+    <div className="wrapper" ref={ref}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

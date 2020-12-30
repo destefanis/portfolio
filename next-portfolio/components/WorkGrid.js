@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import useInView from "react-cool-inview";
 import Card from '../components/Card'
 import FeaturedCard from './FeaturedCard'
-import styles from './WorkGrid.module.css'
 
 function WorkGrid() {
   const [visibleState, setVisibleState] = useState("initial");
@@ -46,11 +45,7 @@ function WorkGrid() {
 
   return (
     <motion.div className="grid" ref={ref} variants={gridVariants} initial="initial" animate={visibleState}>
-      <div className={styles.workGrid}>
-        {/* <div className={`${styles.card} ${styles.featured}`}>
-          <img src="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-image.png" alt="Discord server video ui" className={styles.image} />
-          <h6 className={styles.title}>Server Video</h6>
-        </div> */}
+      <div className="work-grid">
         <AnimatePresence>
           <FeaturedCard 
             image="https://newportfolio.s3-us-west-2.amazonaws.com/server-video-image.png"

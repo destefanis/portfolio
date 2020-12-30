@@ -1,5 +1,5 @@
 .aboutSection {
-  padding: 0;
+  padding: 360px 0 120px;
   color: var(--color-black);
   grid-column-start: 1;
   grid-column-end: 13;
