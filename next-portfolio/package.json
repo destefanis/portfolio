@@ -10,7 +10,7 @@
   "dependencies": {
     "@popmotion/popcorn": "^0.4.4",
     "framer-motion": "^2.3.0",
-    "next": "9.3.5",
+    "next": "11.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-intersection-observer": "^8.28.5"
